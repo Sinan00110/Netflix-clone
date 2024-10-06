@@ -1,0 +1,116 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+nav{
+    /* border: 2px solid red; */
+    height: 60px; 
+    display: flex;
+    justify-content: center;
+}
+.navmain{
+    /* border: 2px solid blue; */
+    height: inherit;
+    width: 92%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+.heading{
+    text-align: center;
+    color: 
+    #333333;
+}
+.form{
+    /* border: 2px solid red; */
+    text-align: center;
+}
+input{
+    width: 290px;
+    height: 50px;
+    background-origin: 1px solid rgb(179, 176, 176);
+    border-radius: 5px;
+}
+button{
+    height: 50px;
+    width: 290px;
+    color: white;
+    background-color: #e50914;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+}
+button:hover{
+    background-color: #b42b32;
+}
+footer{
+    /* border: 2px solid red; */
+    height: 180px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    /* flex-direction: column; */
+    background-color:
+    #f3f3f3;
+}
+.foomain{
+    /* border: 2px solid green; */
+    width: 92%;
+    display: flex;
+    flex-direction: column;
+}
+.foo1{
+    /* border: 2px solid red; */
+    height: 40px;
+    display: flex;
+    align-items: center;
+}
+.foo2{
+    /* border: 2px solid rgb(255, 211, 17); */
+    height: 140px;
+    display: flex;
+}
+.one{
+    /* border: 2px solid green; */
+    height: inherit;
+    width: 20%;
+}
+.two{
+    /* border: 2px solid green; */
+    height: inherit;
+    width: 20%;
+}
+.three{
+    /* border: 2px solid green; */
+    height: inherit;
+    width: 20%;
+}
+.four{
+    /* border: 2px solid green; */
+    height: inherit;
+    width: 20%;
+}
+ul li{
+    list-style: none;
+    font-size: 14px;
+    color: #868181;
+    padding: 8px;
+}
+.foo1 h3{
+    color:#868181 ;
+    font-size: 16px;
+    padding: 5px;
+}
+.inner{
+    background-color: #e50914;
+    height: 25px;
+    width: 300px;
+    color: white;
+    display: none;
+    left: 400px;
+    top:40px;
+    position: absolute;
+    text-align: center;
+   
+}

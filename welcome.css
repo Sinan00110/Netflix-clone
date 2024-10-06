@@ -1,0 +1,574 @@
+ *{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+} 
+body{background-color: black;}
+
+nav{
+    /* border: 2px solid yellow; */
+     height: 65px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    z-index: 1000;
+    position: relative;
+    position: fixed;
+    top: 0px;
+    background-color: transparent;
+    border-bottom: 2px solid transparent;
+    transition: background-color 0.5s ease;
+} 
+/* When scrolled down, we will add a black background */
+nav.scrolled {
+    background-color: black; 
+    border-bottom: 2px solid #222; 
+    transition: background-color 0.5s ease;
+}
+.navmain{
+    /* border: 2px solid rgb(180, 0, 0); */
+    height: inherit;
+    width: 96%;
+    display: flex;
+} 
+.logo{
+    /* border: 2px solid green; */
+     height: inherit;
+    width: 11%;
+    display: flex;
+    align-items: center;
+} 
+ .items{ 
+     /* border: 2px solid yellow;  */
+     height: inherit;
+    width: 36%;
+    display: flex;
+    align-items: center;
+}
+.items ul{
+    display: flex;
+    gap: 20px;
+}
+.items ul li{
+    list-style: none;
+}
+.items ul li a{
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 800;
+}
+
+
+.leftitems{
+    /* border: 2px solid rgb(30, 255, 0); */
+    height: inherit;
+    width: 8%;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    justify-content: end;
+    
+}
+.fa-bell{
+    font-size: 16px;
+} 
+.welcome{ 
+     height: 28px; 
+    width: 28px;
+
+}
+.fa-magnifying-glass{
+    font-size: 16px;
+}
+.search-container{
+    /* border: 2px solid red; */
+    display: flex;
+    align-items: center;
+    gap: 10px;
+} 
+ .coverall{ 
+     /* border: 5px solid greenyellow;  */
+     width: 52%;
+    display: flex;
+    justify-content: end;
+    gap: 35px;
+} 
+.searchfield {
+    width: 0; 
+    opacity: 0;
+    padding: 5px; 
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    background-color: black;
+    color: #fff;
+    transition: width 0.7s ease-in-out, opacity 0.5s ease-in-out; 
+}
+.search-container:hover .searchfield {
+    width: 170px; 
+    opacity: 1; 
+} 
+
+
+
+.slider {
+    position: relative;
+    height: calc(100vh - 20px); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 0;
+    /* border: 3px solid green; */
+}
+.slide {
+    width: 100%;
+    height: 100vh; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    transition: opacity 1s ease-in-out;
+    opacity: 0;
+    position: absolute;
+    z-index: 1;
+    /* border: 3px solid rgb(219, 219, 219); */
+
+} 
+.slide.active {
+    opacity: 1;
+    z-index: 2;
+}
+.content
+{
+    position: relative;
+    /* border: 2px solid yellow; */
+    top: 155px;
+    z-index: 10;
+    
+}
+.slide .content {
+    color: white;
+    text-align: left;
+    padding: 20px;
+    max-width: 600px;
+}
+.slide .content h1 {
+    font-size: 50px;
+    margin-bottom: 18px;
+    font-weight: bold;
+}
+.slide .content p {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+.content button {
+    padding: 10px 20px;
+    font-size: 15px;
+    margin-right: 10px;
+    border: none;
+    background-color: rgb(51 51 51 / 50%);
+    color: white;
+    font-weight: 600;
+    margin-bottom: 15px;
+    width: 105px;
+    height: 34px;
+    cursor: pointer;
+    
+
+}
+
+.slide .content button:hover {
+    background-color: #b1a3a3;
+    color: #111111; 
+}
+
+nav .leftitems .fa-bell {
+    font-size: 16px;
+    transition: color 0.3s ease; 
+}
+
+nav .leftitems .fa-bell:hover {
+    color: gold !important;
+}
+section{
+    /* border: 5px solid yellow; */
+    height: 250px;
+    width: 100%;
+    
+    display: flex;
+    justify-content: center;
+}
+.section1{
+    /* border: 2px solid green; */
+    width: 94%;
+    height: inherit;
+    display: flex;
+    flex-direction: column;
+}
+.heading{
+    /* border: 2px solid red; */
+    width: 100%;
+    height: 40px;
+}
+.nobox{
+    /* border: 2px solid blue; */
+    height:210px;
+   gap: 90px;
+   display: flex;
+   width: calc(100% * 2); 
+   transition: transform 0.5s ease;
+   position: relative;
+   z-index: 11;
+   
+}
+.one {
+    display: flex;
+    justify-content: start;
+    
+    height: inherit; 
+    width: 18%;
+    /* border: 2px solid green; */
+    position: relative;
+}
+.card1 {
+   
+    /* border: 2px solid rgb(255, 166, 0); */
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    color: hsl(0, 0%, 100%);
+    font-size: 190px;
+    font-weight: 1000;
+    -webkit-text-stroke: 8px #969696;
+    -webkit-text-fill-color: #000;
+    width: 80px;
+    height: inherit; 
+    position: absolute;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+
+}
+.card1 h1{
+    position: absolute;
+    right: -35px;
+    bottom:5px;
+}
+.img1{
+    /* border: 2px solid rgb(254, 255, 254); */
+    width: 150px;
+    height: 185px;
+    display: flex;
+   align-items: start;
+   justify-content: center;
+   position: relative;
+  /* border: 5px solid red; */
+   
+
+}
+.img1 img{
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+     z-index: 3; 
+    position: absolute;
+    left: 71px;
+    transition: all 480ms;   
+}
+.img1 img:hover{
+    transform: scale(1.2)
+ 
+}
+.two {
+    display: flex;
+    justify-content: start;
+    
+    height: inherit; 
+    width: 18%;
+    /* border: 2px solid green; */
+    position: relative;
+}
+.three {
+    display: flex;
+    justify-content: start;
+    
+    height: inherit; 
+    width: 18%;
+    /* border: 2px solid green; */
+    position: relative;
+}
+.four {
+    display: flex;
+    justify-content: start;
+    
+    height: inherit; 
+    width: 18%;
+    /* border: 2px solid green; */
+    position: relative;
+}
+.five {
+    display: flex;
+    justify-content: start;
+    
+    height: inherit; 
+    width: 18%;
+    /* border: 2px solid green; */
+    position: relative;
+}
+
+
+.slider-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    overflow: hidden; 
+   
+}
+.prev, .next {
+    background-color: transparent; 
+    font-size: 25px;
+    color: #fff; 
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    position: absolute;
+    font-weight: bold;
+    z-index: 1;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 200;
+}
+.prev {
+    left: 0;
+}
+
+.next {
+    right: 0;
+}
+.sectiontwo{
+    /* border: 3px solid yellow; */
+    height: 470px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.sectwohead{
+    /* border: 3px solid rgb(42, 247, 15); */
+    width: 94%;
+    height: 50px;
+
+}
+.sectiontwosub{
+    /* border: 3px solid rgb(255, 255, 255); */
+    height: 420px;
+    width: 94%;
+    display: flex;
+   /* align-items: start; */
+   justify-content: space-between;
+
+}
+.secone{
+    /* border: 3px solid rgb(197, 0, 0); */
+    height: 420px;
+    width: 24%;
+    
+}
+.sectwo{
+    /* border: 3px solid rgb(197, 0, 0); */
+    height: 420px;
+    width: 24%;
+}
+.secthree{
+    /* border: 3px solid rgb(197, 0, 0); */
+    height: 420px;
+    width: 24%;
+}
+.secfour{
+    /* border: 3px solid rgb(197, 0, 0); */
+    height: 420px;
+    width: 24%;
+}
+.secimages{
+    height: 100%;
+    width: 100%;
+    transition: all 480ms;
+}
+.secimages:hover{
+    transform: scale(1.1)
+}
+.sectionthree{
+     /* border: 3px solid yellow; */
+     height: 270px;
+     width: 100%;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     gap: 15px;
+    
+}
+.threehead{
+    /* border: 3px solid rgb(243, 243, 243); */
+    width: 94%;
+    height:50px ;    
+}
+.sectionthreesub{
+    /* border: 3px solid rgb(250, 0, 0); */
+    width: 94%;
+    height:170px ; 
+    display: flex;
+    justify-content: start;
+    /* gap: 10px; */
+    justify-content: space-between;
+}
+.threeone{
+    /* border: 2px solid green; */
+    width: 23%;
+    height: inherit;
+}
+.threetwo{
+    /* border: 2px solid green; */
+    width: 23%;
+    height: inherit;
+}
+.threethree{
+    /* border: 2px solid green; */
+    width: 23%;
+    height: inherit;
+}
+.threefour{
+    /* border: 2px solid green; */
+    width: 23%;
+    height: inherit;
+}
+.sectionfour{
+         border: 3px solid yellow;
+         height: 320px;
+         width: 100%;
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         /* justify-content: space-between; */
+}
+.fourhead{
+    /* border: 2px solid red; */
+    height: 50px;
+    width: 94%;
+}
+.sectionfoursub{
+    /* border: 2px solid red; */
+    height: 230px;
+    width: 94%;
+    display: flex;
+    justify-content: space-between;
+    gap: 7px;
+    
+}
+.fourone{
+    /* border: 2px solid white; */
+    height: inherit;
+    width: 14%;
+}
+.fourtwo{
+    /* border: 2px solid white; */
+    height: inherit;
+    width: 14%;
+}
+.fourthree{
+    /* border: 2px solid white; */
+    height: inherit;
+    width: 14%;
+}
+
+
+
+
+
+
+
+
+
+
+
+body{
+    background-color: black;
+}
+
+.api {
+    position: absolute;
+    top: 65px; /* Place below navbar */
+    width: 100%;
+    /* border: 3px solid yellow; */
+    color: white;
+    padding: 20px;
+    z-index: 1; 
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center; 
+    gap: 20px;
+}
+
+.hidden {
+    display: none; 
+}
+
+/* nav {
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    background-color: black; 
+    padding: 15px 0;
+} */
+
+.start {
+    color: white;
+    text-align: center;
+    margin: 10px;
+    width: 250px; /* Set a width for the search items */
+   /* Allow items to take up equal space and wrap */
+   /* flex: 0 1 200px; */
+    background-color: #000000; 
+    padding: 10px;
+    border-radius: 8px;
+    border: 4px solid white;
+    /* box-shadow: 6px 6px 6px rgb(168, 168, 168); */
+    filter: drop-shadow(4px 4px 4px  rgb(255, 255, 255));
+    width: 220px;
+}
+
+.start .image img {
+    width: 100%; /* Make sure the images fill the card */
+    height: auto;
+    border-radius: 5px;
+    padding: 10px;
+   
+}
+.image{
+    transition: all 480ms;
+}
+.image:hover
+{
+    
+    transform: scale(1.1)
+}
+
+.search-container {
+    position: relative;
+    z-index: 1000;
+}
+
+/* .searchfield {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+} */
+
+/* Navbar should remain fixed */
+.iconsearch {
+    cursor: pointer;
+}

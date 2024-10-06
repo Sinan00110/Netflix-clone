@@ -1,0 +1,100 @@
+/* Base styles above this */
+
+/* Small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .first {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .ch1, .ch2 {
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .background {
+        background-size: cover;
+    }
+
+    .heading1 h1 {
+        font-size: 30px;
+    }
+
+    .firstp p {
+        font-size: 18px;
+    }
+
+    .secondpart, .secondmain, .thirdmain {
+        height: auto;
+    }
+
+    .secondmainwidth, .thirdmainwidth {
+        flex-direction: column;
+    }
+
+    .scimage, .thimage, .fhimage {
+        width: 100%;
+        height: auto;
+    }
+
+    .scimg, .thimg, .fhimg {
+        width: 100%;
+        height: auto;
+    }
+
+    .navmain {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* Medium devices (tablets, 600px to 900px) */
+@media only screen and (min-width: 601px) and (max-width: 900px) {
+    .first {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .ch1, .ch2 {
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .background {
+        background-size: cover;
+    }
+
+    .heading1 h1 {
+        font-size: 40px;
+    }
+
+    .firstp p {
+        font-size: 19px;
+    }
+
+    .secondpart {
+        height: auto;
+    }
+
+    .secondmainwidth, .thirdmainwidth {
+        flex-direction: column;
+    }
+
+    .scimage, .thimage, .fhimage {
+        width: 100%;
+        height: auto;
+    }
+
+    .scimg, .thimg, .fhimg {
+        width: 100%;
+        height: auto;
+    }
+
+    .navmain {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
